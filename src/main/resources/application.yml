@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: GATEWAY
+    name: API-GATEWAY
   cloud:
     gateway:
       routes:
@@ -38,7 +38,7 @@ hystrix:
             timeoutInMilliseconds: 4000
 
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: hystrix.stream
